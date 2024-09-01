@@ -1,10 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Search Input Handling
     const searchInput = document.querySelector('.search-input');
     if (searchInput) {
         searchInput.addEventListener('input', (event) => {
             console.log('Search input changed to: ', event.target.value);
-            // Optionally, add functionality to filter results
         });
     }
 
@@ -13,11 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (cartIcon) {
         cartIcon.addEventListener('click', () => {
             alert('Cart icon clicked!');
-            // Optionally, add functionality to open cart drawer or redirect
         });
     }
-
-    // Scroll to Top Button
     const scrollTopButton = document.createElement('div');
     scrollTopButton.textContent = 'Back to Top';
     scrollTopButton.classList.add('scroll-top');
@@ -26,7 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
     scrollTopButton.addEventListener('click', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
-
     window.addEventListener('scroll', () => {
         if (window.scrollY > 200) {
             scrollTopButton.style.display = 'block';
