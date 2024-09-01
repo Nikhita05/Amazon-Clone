@@ -1,20 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Toggle Mobile Menu (Example only, make sure to add menu toggle button and menu container in your HTML)
-    const menuToggle = document.createElement('button');
-    menuToggle.id = 'menu-toggle';
-    menuToggle.textContent = '☰ Menu';
-    document.body.insertBefore(menuToggle, document.body.firstChild);
-
-    const navMenu = document.createElement('div');
-    navMenu.id = 'nav-menu';
-    navMenu.style.display = 'none'; // Initially hidden
-    navMenu.innerHTML = '<p>Menu Item 1</p><p>Menu Item 2</p><p>Menu Item 3</p>';
-    document.body.insertBefore(navMenu, document.body.firstChild);
-
-    menuToggle.addEventListener('click', () => {
-        navMenu.style.display = navMenu.style.display === 'none' ? 'block' : 'none';
-    });
-
     // Search Input Handling
     const searchInput = document.querySelector('.search-input');
     if (searchInput) {
